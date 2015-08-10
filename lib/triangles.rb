@@ -6,11 +6,13 @@ class Triangle
   end
 
   define_method(:triangle?) do
-    if @side_a == @side_b && @side_b == @side_c
-      true
+    if @side_c > @side_b.+(@side_a) || @side_b > @side_c.+(@side_a) || @side_a > @side_b.+(@side_c)
+      false
     elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
       true
     elsif @side_a != @side_b && @side_b != @side_c
+      true
+    elsif @side_a == (@side_b && @side_c)
       true
     else
       false

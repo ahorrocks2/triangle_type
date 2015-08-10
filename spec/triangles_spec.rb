@@ -22,5 +22,10 @@ describe(Triangle) do
       test_triangle = Triangle.new(2, 3, 4)
       expect(test_triangle.triangle?()).to(eq(true))
     end
+
+    it('will return false if it is not a triangle') do
+      test_triangle = Triangle.new(2, 3, 25)
+      expect(test_triangle.triangle?()).to(eq(false))
+    end
   end
 end
