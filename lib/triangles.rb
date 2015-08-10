@@ -10,6 +10,8 @@ class Triangle
       true
     elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
       true
+    elsif @side_a != @side_b && @side_b != @side_c
+      true
     else
       false
     end

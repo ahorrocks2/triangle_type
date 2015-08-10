@@ -17,5 +17,10 @@ describe(Triangle) do
       test_triangle = Triangle.new(2, 2, 3)
       expect(test_triangle.triangle?()).to(eq(true))
     end
+
+    it('will return true if it is a scalene triangle') do
+      test_triangle = Triangle.new(2, 3, 4)
+      expect(test_triangle.triangle?()).to(eq(true))
+    end
   end
 end
