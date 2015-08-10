@@ -3,5 +3,7 @@ class Triangle
   #code
   end
 
-
+  define_method(:triangle?) do
+    true
+  end
 end
