@@ -1,9 +1,16 @@
 class Triangle
   define_method(:initialize) do |side_a, side_b, side_c|
-  #code
+    @side_a = side_a
+    @side_b = side_b
+    @side_c = side_c
   end
 
   define_method(:triangle?) do
-    true
+    if @side_a == @side_b && @side_b == @side_c
+      true
+    else
+      false
+    end  
   end
+
 end
